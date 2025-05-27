@@ -1,0 +1,169 @@
+/* Se eliminan los márgenes y rellenos por defecto */
+* {
+  margin: 0;                         /* Quita margen por defecto */
+  padding: 0;                        /* Quita relleno por defecto */
+  box-sizing: border-box;           /* Incluye borde y padding dentro del tamaño total */
+}
+
+/* Se aplica estilo general al cuerpo de la página */
+body {
+  font-family: 'Arial', sans-serif;  /* Se define la fuente a usar */
+  background-color: #f7f7f7;         /* Color de fondo */
+  padding: 20px;                     /* Espacio alrededor del contenido */
+}
+
+/* Área principal donde está todo el contenido */
+.contenedor {
+  max-width: 800px;                  /* Se limita el ancho máximo */
+  margin: 0 auto;                    /* Se centra en la pantalla */
+  background-color: white;          /* Fondo blanco */
+  padding: 30px;                     /* Espacio interior del contenedor */
+  border-radius: 8px;                /* Bordes ligeramente redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilo para el título */
+h1 {
+  text-align: center;               /* Se alinea al centro */
+  font-size: 2rem;                  /* Tamaño de letra */
+  color: #333;                      /* Color letra */
+  margin-bottom: 20px;             /* Espacio por debajo */
+}
+
+/* Estilo para los subtítulos */
+h2 {
+  font-size: 1.5rem;                /* Tamaño de letra */
+  color: #444;                      /* Color letra */
+  margin-bottom: 10px;             /* Espacio por debajo */
+}
+
+/* Estilos generales para campos de entrada, áreas de texto y botones */
+input, textarea, button {
+  width: 100%;                      /* Ocupan todo el ancho disponible */
+  padding: 12px;                    /* Espacio interior */
+  margin-bottom: 12px;              /* Espacio entre campos */
+  border-radius: 5px;               /* Borde redondeado */
+  border: 1px solid #ccc;           /* Color del borde */
+  font-size: 1rem;                  /* Tamaño de letra */
+}
+
+/* Cambia el borde cuando el campo está activo (seleccionado) */
+input:focus, textarea:focus, button:focus {
+  outline: none;                    /* Elimina el contorno por defecto */
+  border-color: #007bff;           /* Azul como color de enfoque */
+}
+
+/* El área de texto no se puede agrandar */
+textarea {
+  height: 120px;                    /* Altura fija */
+  resize: none;                     /* No se puede redimensionar */
+}
+
+/* Estilos para los botones */
+button {
+  background-color: #007bff;        /* Fondo azul */
+  color: white;                     /* Texto en blanco */
+  font-weight: bold;                /* Texto en negrita */
+  cursor: pointer;                  /* Cambia el cursor al pasar por encima */
+  transition: background-color 0.3s ease; /* Suaviza el cambio de color del hover */
+  margin-top: 10px;                 /* Espacio superior */
+  width: 48%;                       /* Ancho del botón para colocar 2 en línea */
+  margin-right: 4%;                 /* Separación entre botones */
+}
+
+/* Cuando el cursor pasa sobre el botón, cambia el color */
+button:hover {
+  background-color: #0056b3;        /* Azul más oscuro al pasar el mouse */
+}
+
+/* El último botón no necesita margen a la derecha */
+button:last-child {
+  margin-right: 0;                  /* Elimina margen derecho en el último botón */
+}
+
+/* Contenedor para cada tarea mostrada */
+.tarea {
+  background-color: #fff;           /* Fondo blanco */
+  padding: 15px;                    /* Espacio interior del contenedor */
+  margin: 10px 0;                   /* 10 px de margen arriba y abajo */
+  border-radius: 5px;               /* Bordes ligeramente redondeados */
+  border: 1px solid #ddd;           /* Borde gris claro */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilo del título de cada tarea */
+.tarea h3 {
+  font-size: 1.2rem;                /* Tamaño del título de la tarea */
+  margin-bottom: 8px;              /* Espacio debajo del título */
+}
+
+/* Estilo del contenido de cada tarea */
+.tarea p {
+  font-size: 1rem;                  /* Tamaño del texto */
+  color: #666;                      /* Color gris oscuro para el contenido */
+}
+
+/* Contenedor de la imagen del logo */
+.logo {
+  text-align: center;               /* Centra la imagen del logo */
+  margin-bottom: 20px;             /* Espacio debajo del logo */
+}
+
+/* Estilo para la imagen del logo */
+.logo-img {
+  width: 300px;                     /* Ancho fijo */
+  height: auto;                     /* Altura proporcional */
+  border-radius: 8px;               /* Bordes redondeados opcionales */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: transform 0.3s ease;  /* Suaviza la animación al hacer hover */
+}
+
+/* Efecto al pasar el mouse */
+.logo-img:hover {
+  transform: scale(1.1);            /* Aumenta un 10% el tamaño */
+}
+
+/* Para centrar contenido */
+.centrar {
+  display: flex;                    /* Activa Flexbox */
+  justify-content: center;         /* Centra el contenido horizontalmente */
+}
+
+/* Centrado especial para los botones */
+.centrar button {
+  width: 50%;                       /* El botón ocupa la mitad del contenedor */
+}
+
+/* Etiquetas como "Responsable" o "Fecha" en el formulario */
+label {
+  display: block;                   /* Cada etiqueta ocupa su propia línea */
+  margin-bottom: 5px;              /* Espacio debajo del texto */
+  font-weight: bold;               /* Negrita para destacar */
+}
+
+/* Estilo para el menú desplegable (select) */
+select.campo-select {
+  width: 100%;                      /* Ocupa todo el ancho disponible */
+  padding: 10px;                    /* Espacio interior */
+  font-size: 1rem;                  /* Tamaño del texto */
+  border: 1px solid #ccc;          /* Borde gris claro */
+  border-radius: 6px;              /* Bordes redondeados */
+  background-color: #fff;          /* Fondo blanco */
+  margin-bottom: 10px;             /* Espacio debajo */
+  cursor: pointer;                 /* Cursor de selección */
+}
+
+/* Cuando el select está activo */
+select.campo-select:focus {
+  border-color: #007bff;           /* Cambia el color del borde al seleccionar */
+  outline: none;                   /* Elimina el contorno por defecto */
+}
+
+/* Transiciones en inputs */
+input, textarea, select {
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Suaviza la animación al hacer hover */
+}
+
+input:focus, textarea:focus, select:focus {
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.5); /* Sombra azul suave */
+}
