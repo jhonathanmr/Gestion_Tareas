@@ -66,7 +66,7 @@ npm run dev
 
 ## Video de presentación
 
-link para el video en el que debo explicar todo el funcionamiento y el codigo
+(https://drive.google.com/file/d/1R3tzCRH7GkTdYWk0uc983NTVwqxqnrox/view?usp=sharing)
 
 
 ## Autor
